@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="text-3xl leading-none tracking-[0.4rem]">portfolio</div>
       </div>
 
-      <div className="fixed right-5">
+      <div className="fixed z-50 right-5">
         <FontAwesomeIcon
           icon={faBars}
           className="font-white sm:text-ftcolor text-4xl"

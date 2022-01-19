@@ -1,16 +1,47 @@
-// import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import "./home.css";
 
-// const scrollTop = (): number => {
-//   return Math.max(
-//     window.pageYOffset,
-//     document.documentElement.scrollTop,
-//     document.body.scrollTop
-//   );
-// };
+// fadeOut
+const Intro = ({ state }) => {
+  const fadeOut = (node, duration) => {
+    node.style.opacity = 1;
 
-const Intro = () => {
+    var start = performance.now();
+
+    requestAnimationFrame(function tick(timestamp) {
+      var easing = (timestamp - start) / duration;
+
+      node.style.opacity = Math.max(1 - easing, 0);
+
+      if (easing < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        node.style.opacity = "";
+        node.style.display = "none";
+      }
+    });
+  };
+
+  //scroll function
+  const changeDisplayState = () => {
+    if (document.scrollingElement.scrollTop >= 10) {
+      fadeOut(document.querySelector(".fo"), 1200);
+      const mo = () => {
+        state(false);
+        window.scrollTo(0, 0);
+      };
+      setTimeout(mo, 1200);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeDisplayState);
+    return () => window.removeEventListener("scroll", changeDisplayState);
+  });
+
   return (
-    <div className="h-[calc(100vh + 100px)]">
+    <div className="fo h-[calc(100vh+100px)]">
+      {/* <div className={isHeightOver ? "block" : "opacity-0"}> */}
       <div className="fixed w-screen h-screen introBg">
         <div className="absolute top-52 sm:60 left-20">
           <h1 className="text-3xl sm:4xl font-bold text-white tracking-widest leading-normal">
