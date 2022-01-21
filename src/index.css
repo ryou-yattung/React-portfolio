@@ -13,3 +13,27 @@
 .vertical-rl {
   writing-mode: vertical-rl;
 }
+
+.transformA {
+  transform: scale(-1, 1);
+}
+.animeFly {
+  animation: animeFly 5s ease 1;
+  animation-fill-mode: forwards;
+}
+@keyframes animeFly {
+  0% {
+    right: 50%;
+    bottom: 0px;
+    transform: scale(-1, 1);
+  }
+  90% {
+    right: 5%;
+    transform: scale(-1, 1) rotate(0.1turn);
+  }
+  100% {
+    right: 5%;
+    bottom: 100px;
+    transform: scale(-1, 1) rotate(0.1turn);
+  }
+}

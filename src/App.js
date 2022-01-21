@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import { Switch, Route } from "react-router-dom";
 import Intro from "./pages/page1/Intro";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 function App() {
   // intro
@@ -11,11 +12,13 @@ function App() {
   return (
     <div className="font-serif">
       {isHeightOver === true ? (
-        <Intro state={setIsHeightOver} />
+        <Intro setState={setIsHeightOver} />
       ) : (
-        <div className="relative z-50 w-screen h-[5000px]">
+        <div className="relative z-50 w-screen h-auto">
           <Navbar />
           <Menu />
+
+          <Footer />
         </div>
       )}
     </div>

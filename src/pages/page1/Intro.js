@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./home.css";
 
 // fadeOut
-const Intro = ({ state }) => {
+const Intro = ({ setState }) => {
   const fadeOut = (node, duration) => {
     node.style.opacity = 1;
 
@@ -27,7 +27,7 @@ const Intro = ({ state }) => {
     if (document.scrollingElement.scrollTop >= 10) {
       fadeOut(document.querySelector(".fo"), 1200);
       const mo = () => {
-        state(false);
+        setState(false);
         window.scrollTo(0, 0);
       };
       setTimeout(mo, 1200);
