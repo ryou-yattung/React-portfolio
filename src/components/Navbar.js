@@ -1,20 +1,24 @@
-import React from "react";
+// import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-// import { Link } from "react-router-dom";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ isOpen, toggle }) => {
   return (
     <header className="flex justify-between items-center h-[10vh] relative  text-white">
-      <div className="ml-5 text-center font-bold text-white sm:text-ftcolor">
-        <div className="text-2xl leading-none ">LEUNG YATTUNG</div>
-        <div className="text-3xl leading-none tracking-[0.4rem]">portfolio</div>
-      </div>
+      <Link to="/">
+        <div className="ml-5 text-center font-bold sm:font-light text-white sm:text-ftcolor cursor-pointer">
+          <div className="text-2xl tracking-tighter leading-none">
+            LEUNG YATTUNG
+          </div>
+          <div className="text-3xl tracking-widest leading-none">portfolio</div>
+        </div>
+      </Link>
 
-      <div className="fixed z-50 right-5">
+      <div className="fixed z-50 right-7 cursor-pointer">
         <FontAwesomeIcon
-          // onClick={changeMenu}
-          icon={faBars}
+          onClick={toggle}
+          icon={isOpen ? faTimes : faBars}
           className="text-ftcolor text-4xl"
         />
       </div>

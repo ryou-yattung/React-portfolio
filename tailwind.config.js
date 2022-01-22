@@ -4,7 +4,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Noto: ["Noto Sans JP"],
+        Noto: ["'Noto Serif JP', serif"],
+      },
+      fontSize: {
+        txt: "2.2rem",
+        txts: "1.8rem",
+        txfs: "1rem",
+        txf: "0.8rem",
       },
       colors: {
         ftcolor: "#372F1F",
@@ -16,7 +22,7 @@ module.exports = {
         intro2: "url('img/intro.jpg2')",
       },
       keyframes: {
-        aaa: {
+        toBottom: {
           "0%": { top: "0" },
           "100%": { top: "100%" },
         },
