@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ isOpen, toggle }) => {
   return (
-    <header className="flex justify-between items-center h-[10vh] relative  text-white">
+    <header className="flex justify-between items-center h-[10vh] relative">
       <Link to="/">
-        <div className="ml-5 text-center font-bold sm:font-light text-white sm:text-ftcolor cursor-pointer">
-          <div className="text-2xl tracking-tighter leading-none">
+        <div className="ml-10 text-center font-bold sm:font-normal text-white sm:text-ftcolor cursor-pointer">
+          <div className="text-1xl tracking-tighter leading-none">
             LEUNG YATTUNG
           </div>
-          <div className="text-3xl tracking-widest leading-none">portfolio</div>
+          <div className="text-2xl tracking-widest leading-none">portfolio</div>
         </div>
       </Link>
 

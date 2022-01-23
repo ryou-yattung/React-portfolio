@@ -7,10 +7,11 @@ module.exports = {
         Noto: ["'Noto Serif JP', serif"],
       },
       fontSize: {
-        txt: "2.2rem",
-        txts: "1.8rem",
-        txfs: "1rem",
+        txh1: "7rem",
+        txt: "2rem",
+        txts: "2.4rem",
         txf: "0.8rem",
+        txfs: "1rem",
       },
       colors: {
         ftcolor: "#372F1F",

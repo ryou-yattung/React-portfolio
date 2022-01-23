@@ -6,27 +6,40 @@ import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 const Menu = ({ isOpen, toggle }) => {
+  const toTop = () => {
+    if (isOpen) {
+      window.scrollTo(0, 0);
+    }
+  };
   return (
     <nav
       className={`fixed w-full h-full top-0 z-40 transition-[] duration-500 bg-bgcolor1 text-white
       ${isOpen ? "left-[0%]" : "left-[-100%]"}`}
-      onClick={toggle}
     >
       <div className="w-1/4 h-full absolute left-0 hidden sm:flex flex-col items-center justify-center">
         <img src={qrcode} alt="qrcode" />
         <p className="text-2xl mt-3">スマホ用</p>
       </div>
 
-      <div className="w-1/3 h-full absolute m-auto right-0 left-0 flex flex-col items-center justify-center text-center">
+      <div
+        className="w-1/3 h-full absolute m-auto right-0 left-0 flex flex-col items-center justify-center text-center"
+        onClick={toTop}
+      >
         <ul className="text-3xl sm:text-4xl">
           <li className="mb-10 hover:text-ftcolor cursor-pointer">
-            <Link to="/">Homepage</Link>
+            <Link to="/" onClick={toggle}>
+              Homepage
+            </Link>
           </li>
           <li className="mb-10 hover:text-ftcolor cursor-pointer">
-            <Link to="aboutMe">AboutMe</Link>
+            <Link to="aboutMe" onClick={toggle}>
+              AboutMe
+            </Link>
           </li>
           <li className="mb-10 hover:text-ftcolor tracking-widest cursor-pointer">
-            <Link to="/works">Works</Link>
+            <Link to="/works" onClick={toggle}>
+              Works
+            </Link>
           </li>
         </ul>
       </div>

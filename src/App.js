@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Intro from "./pages/homepage/Intro";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
-import Homepage from "./pages/homepage/index";
-import AboutMe from "./pages/aboutMe/aboutMe";
-import Works from "./pages/works/works";
+import Homepage from "./pages/homepage";
+import AboutMe from "./pages/aboutMe";
+import Works from "./pages/works";
 import Footer from "./components/Footer";
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
               <Route path="/works" element={<Works />} />
             </Routes>
 
-            <Footer />
+            {/* <Footer /> */}
           </div>
         )}
       </div>
