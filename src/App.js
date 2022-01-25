@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Intro from "./pages/homepage/Intro";
 import Navbar from "./components/Navbar";
@@ -17,7 +17,6 @@ function App() {
 
   const toggle = () => {
     setIsopen(!isOpen);
-    // console.log(isOpen);
   };
 
   useEffect(() => {
@@ -34,9 +33,13 @@ function App() {
     };
   });
 
+  // flyanime
+  const footerHeight = useRef(null);
+  console.log(footerHeight);
+
   return (
     <BrowserRouter>
-      <div className="font-Noto ">
+      <div className="font-Noto sm:overflow-hidden">
         {isHeightOver === true ? (
           <Intro setIsHeightOver={setIsHeightOver} />
         ) : (
@@ -52,7 +55,7 @@ function App() {
               <Route path="/works" element={<Works />} />
             </Routes>
 
-            {/* <Footer /> */}
+            <Footer />
           </div>
         )}
       </div>

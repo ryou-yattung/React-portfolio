@@ -7,7 +7,7 @@ const Navbar = ({ isOpen, toggle }) => {
   return (
     <header className="flex justify-between items-center h-[10vh] relative">
       <Link to="/">
-        <div className="ml-10 text-center font-bold sm:font-normal text-white sm:text-ftcolor cursor-pointer">
+        <div className="ml-5 sm:ml-10 text-center text-ftcolor bg-white/70 p-2 cursor-pointer">
           <div className="text-1xl tracking-tighter leading-none">
             LEUNG YATTUNG
           </div>

@@ -40,8 +40,8 @@
 
 /* title font */
 .titleh1 {
-  @apply text-txt mt-6 text-ftcolor text-center sm:text-txh1 sm:font-bold sm:text-left;
+  @apply text-txt pt-6 text-ftcolor text-center sm:text-txh1 sm:font-bold sm:text-left;
 }
 .titleh2 {
-  @apply text-txfs leading-[1] sm:leading-[0] mb-8 text-ftcolor text-center sm:text-txt sm:font-bold sm:text-left sm:mb-32;
+  @apply text-txfs leading-[1] sm:leading-[0.8] mb-8 text-ftcolor text-center sm:text-txt sm:font-bold sm:text-left sm:mb-32;
 }

@@ -20,7 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         intro1: "url('img/intro.jpg')",
-        intro2: "url('img/intro.jpg2')",
+        intro2: "url('img/intro2.jpg')",
       },
       keyframes: {
         toBottom: {

@@ -23,7 +23,7 @@ const Intro = ({ setIsHeightOver }) => {
 
   //scroll function
   const changeDisplayState = () => {
-    if (document.scrollingElement.scrollTop > 50) {
+    if (document.scrollingElement.scrollTop > 30) {
       fadeOut(document.querySelector(".fo"), 1200);
       const mo = () => {
         setIsHeightOver(false);
@@ -39,7 +39,7 @@ const Intro = ({ setIsHeightOver }) => {
   });
 
   return (
-    <div className="fo h-[calc(100vh+55px)]">
+    <div className="fo h-[calc(100vh+50px)]">
       {/* <div className={isHeightOver ? "block" : "opacity-0"}> */}
       <div className="fixed w-screen h-screen introBg">
         <div className="absolute top-52 sm:60 left-10 sm:left-20">
