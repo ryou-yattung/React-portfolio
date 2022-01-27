@@ -45,3 +45,16 @@
 .titleh2 {
   @apply text-txfs leading-[1] sm:leading-[0.8] mb-8 text-ftcolor text-center sm:text-txt sm:font-bold sm:text-left sm:mb-32;
 }
+
+/* work block none */
+.workBlock {
+  @apply block;
+}
+.workNone {
+  @apply hidden;
+}
+
+/* aboutSkill flex */
+.skillFlex {
+  @apply w-12 sm:w-10 h-auto text-center text-txf text-ftcolor;
+}

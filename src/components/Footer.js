@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import Fly from "../img/fly.png";
-const Footer = () => {
+
+const Footer = ({ setIsHeightOver }) => {
+  // flyanime
+  // const getCurrent = useRef(null);
+  // console.log(getCurrent);
+  // const getHeight = getCurrent.current.offsetHeight;
+  // console.log(getHeight);
+  // const flyanime = () => {
+  //   if (window.scrollY > getHeight) {
+  //     console.log("aaa");
+  //     this.classList.add("animeFly");
+  //   } else {
+  //     this.classList.remove("animeFly");
+  //   }
+  // };
+
   return (
-    <footer className="w-full h-auto pb-10 sm:pb-0 bg-bgcolor1">
+    <footer
+      className="w-full h-auto pb-10 sm:pb-0 bg-bgcolor1 setHeight"
+      // ref={getCurrent}
+    >
       <div className="pt-1 sm:pt-0">
         <h2 className="titleh1 sm:text-right sm:mr-20">Contact</h2>
         <h3 className="titleh2 sm:text-right sm:mr-20">お問い合わせ</h3>

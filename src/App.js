@@ -33,10 +33,6 @@ function App() {
     };
   });
 
-  // flyanime
-  const footerHeight = useRef(null);
-  console.log(footerHeight);
-
   return (
     <BrowserRouter>
       <div className="font-Noto sm:overflow-hidden">
@@ -55,7 +51,7 @@ function App() {
               <Route path="/works" element={<Works />} />
             </Routes>
 
-            <Footer />
+            <Footer setIsHeightOver={setIsHeightOver} />
           </div>
         )}
       </div>

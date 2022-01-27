@@ -1,31 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Rupirasu from "../../img/rupirasu.png";
+import graphic from "../../img/graphic.png";
 
 const work = () => {
   const toTop = () => {
     window.scrollTo(0, 0);
   };
+
   return (
     <section className="w-full h-auto">
-      <div className="sm:flex sm:justify-between">
+      <div className="sm:flex sm:flex-nowrap sm:justify-between">
         <div>
           <h1 className="titleh1 sm:ml-20">WORKS</h1>
           <h2 className="titleh2 sm:ml-20">作品</h2>
         </div>
 
-        <div className="hidden sm:block sm:flex mr-20 mt-20 h-[75px] w-[400px]">
-          <p className="w-1/2 text-txfs text-center leading-[70px] bg-ftcolor">
+        <div className="hidden relative sm:flex mr-20 mt-20 h-[75px] w-[400px] after:absolute after:bottom-0 after:block after:h-1 after:w-full after:bg-ftcolor">
+          <p className="w-1/2 text-txfs text-center leading-[70px] bg-ftcolor cursor-pointer">
             サイト
           </p>
-          <p className="w-1/2 text-txfs text-center leading-[70px] ">
+          <p className="w-1/2 text-txfs text-center leading-[70px] cursor-pointer">
             グラフィック
           </p>
         </div>
       </div>
 
-      {/* works(web+ graphic) */}
-      <div className="relative w-full h-auto sm:h-[900px] px-5">
+      {/* works(web) */}
+      <div className="sm:block relative w-full h-auto sm:h-[900px] px-5">
         <div className="hidden sm:block absolute text-[13rem] text-[#372F1F60] tracking-widest leading-none font-bold">
           Website
         </div>
@@ -68,6 +70,40 @@ const work = () => {
         <p className="absolute bottom-0 text-txfs bg-white px-2 sm:hidden">
           るぴなす　<span className="text-txf opacity-70">Rupinasu</span>
         </p>
+      </div>
+
+      {/* works(graphic) */}
+      <div className="hidden  relative w-[1200px] m-auto h-[1000px] px-5 ">
+        <div className="sm:block absolute right-0 text-[13rem] text-[#372F1F60] tracking-widest leading-none font-bold">
+          Graphic
+        </div>
+
+        <div className="hidden sm:block w-[500px] absolute z-30 right-20 bottom-0 text-ftcolor text-right">
+          <div className="">
+            <h3 className="text-txts font-bold mr-14">グラフィック</h3>
+            <h3 className="text-txts font-bold mr-40">graphics</h3>
+
+            <div className="bg-bgcolor1 px-12 py-14">
+              <h4 className="text-txt font-bold text-center mb-5">
+                中崎町キャンドル
+              </h4>
+              <p className="text-txfs text-left mb-6">
+                2009年から続く、大阪中崎町で行われている「冬の済美祭り・中崎町キャンドルナイト」です。{" "}
+              </p>
+
+              <div className="flex mb-6 font-bold">
+                <p className="mr-5">個人制作</p>
+                <p>2年</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src={graphic}
+          alt="graphic"
+          className="w-[550px] absolute bottom-20 left-20"
+        />
       </div>
 
       {/* button */}

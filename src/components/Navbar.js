@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 const Navbar = ({ isOpen, toggle }) => {
   return (
     <header className="flex justify-between items-center h-[10vh] relative">
-      <Link to="/">
-        <div className="ml-5 sm:ml-10 text-center text-ftcolor bg-white/70 p-2 cursor-pointer">
+      <div className="ml-5 sm:ml-10 text-center text-ftcolor bg-white/70 p-2 cursor-pointer">
+        <Link to="/">
           <div className="text-1xl tracking-tighter leading-none">
             LEUNG YATTUNG
           </div>
           <div className="text-2xl tracking-widest leading-none">portfolio</div>
-        </div>
-      </Link>
+        </Link>
+      </div>
 
       <div className="fixed z-50 right-7 cursor-pointer">
         <FontAwesomeIcon
