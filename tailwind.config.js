@@ -21,6 +21,7 @@ module.exports = {
       backgroundImage: {
         intro1: "url('img/intro.jpg')",
         intro2: "url('img/intro2.jpg')",
+        aboutBg: "url('img/about_map.jpeg')",
       },
       keyframes: {
         toBottom: {

@@ -7,8 +7,8 @@ const about = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <section className="relative z-20 w-screen h-auto sm:before:w-[calc(100%-30px)] before:w-full before:h-[620px] sm:before:h-[1150px] before:block before:absolute before:z-10 before:top-[-30vh] before:bg-bgcolor1">
-      <div className="relative z-30 w-screen h-full">
+    <section className="relative z-20 w-screen h-auto sm:before:w-[calc(100%-30px)]  sm:before:h-[1150px] before:block before:absolute before:z-10 before:top-[-30vh] sm:before:bg-bgcolor1">
+      <div className="relative z-30 w-screen h-full bg-bgcolor1 pb-10 sm:p-0 sm:bg-transparent">
         <h1 className="titleh1 sm:ml-20">About me</h1>
         <h2 className="titleh2 sm:ml-20 ">自己紹介</h2>
         <div className="w-[90%] m-auto mb-10 sm:mb-20 sm:m-0 flex flex-row-reverse sm:flex-row justify-between sm:justify-start items-center">

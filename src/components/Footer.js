@@ -19,7 +19,7 @@ const Footer = ({ setIsHeightOver }) => {
 
   return (
     <footer
-      className="w-full h-auto pb-10 sm:pb-0 bg-bgcolor1 setHeight"
+      className="relative z-40 w-full h-auto pb-10 sm:pb-0 bg-bgcolor1 setHeight"
       // ref={getCurrent}
     >
       <div className="pt-1 sm:pt-0">

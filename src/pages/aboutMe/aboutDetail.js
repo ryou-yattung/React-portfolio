@@ -12,7 +12,7 @@ import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const aboutDetail = () => {
   return (
-    <section className="relative z-40 w-screen h-auto sm:h-[900px] py-14">
+    <section className="relative z-40 w-screen h-auto sm:h-[900px] py-14 bg-white">
       <div className="text-ftcolor">
         <h2 className="pb-8 text-center sm:text-left text-txt sm:text-[4rem] leading-9 sm:leading-normal sm:font-bold sm:mt-[80px] sm:ml-[150px]">
           新しい体験をし
@@ -72,9 +72,7 @@ const aboutDetail = () => {
             <div className="flex flex-wrap  justify-around items-end text-center mt-10">
               <div className="skillFlex">
                 <img src={Tailwindcss} alt="tailwindcss" />
-                <p className="mt-2 -translate-x-2 sm:-translate-x-3">
-                  TAILWIND
-                </p>
+                <p className="mt-4 -translate-x-3">TAILWIND</p>
               </div>
               <div className="skillFlex">
                 <img src={Js} alt="js" className="w-12 m-auto" />
@@ -86,7 +84,7 @@ const aboutDetail = () => {
               </div>
               <div className="skillFlex">
                 <img src={Php} alt="php" className="w-12" />
-                <p className="mt-2">PHP</p>
+                <p className="mt-4">PHP</p>
               </div>
             </div>
           </div>

@@ -13,10 +13,10 @@ const myView = () => {
       </div>
 
       <div className="absolute bottom-40 sm:bottom-1/3 left-10 sm:left-[70px]">
-        <h2 className="text-txt sm:text-txts text-white sm:text-ftcolor sm:font-bold sm:tracking-[1rem]">
-          新しい<span className="text-white">体験をし</span>
+        <h2 className="text-txt sm:text-txts sm:text-ftcolor text-white font-bold sm:tracking-[1rem]">
+          新しい<span className="sm:text-white text-ftcolor">体験をし</span>
           <br />
-          新発想<span className="text-white">を生み出す</span>
+          新発想<span className="sm:text-white text-ftcolor">を生み出す</span>
         </h2>
       </div>
 

@@ -56,5 +56,5 @@
 
 /* aboutSkill flex */
 .skillFlex {
-  @apply w-12 sm:w-10 h-auto text-center text-txf text-ftcolor;
+  @apply w-10 h-auto text-center text-txf text-ftcolor;
 }
