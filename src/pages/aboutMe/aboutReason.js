@@ -8,7 +8,7 @@ const aboutReason = () => {
     <section className="relative z-0 w-screen h-auto">
       {/* bg */}
       <div className="w-full h-screen fixed top-0 z-10 bg-aboutBg sm:bg-cover bg-center bg-no-repeat sm:opacity-40"></div>
-      <div className="relative z-20 sm:w-[1000px] sm:h-[1600px] mx-5 my-10  sm:m-auto">
+      <div className="relative z-20 sm:w-[1000px] sm:h-[1700px] mx-5 my-10  sm:m-auto">
         <div className="hidden sm:block absolute top-10 left-0 w-[300px] h-auto bg-white shadow-lg cursor-pointer">
           <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
             １、どうして日本に？
@@ -45,7 +45,7 @@ const aboutReason = () => {
               2、どうして旅行が好き？
             </h1>
             <p className="text-txf sm:text-txfs px-10">
-              香港にいる時、たまに国際交流会に参加していた。様々な国籍な人と出会って、色々な異文化の話を聞いて、外国に行ってみたいなという気持ちが現れました。
+              香港にいる時、たまに国際交流会に参加していた。様々な国籍な人と出会って、色々な異文化の話を聞いて、外国に行ってみたいなという気持ちが現れた。
             </p>
           </div>
           <div className="sm:w-[600px] h-auto mb-10 pb-10 bg-white shadow-2xl">
@@ -57,7 +57,9 @@ const aboutReason = () => {
             <h1 className="text-txfs sm:text-2xl font-bold px-10 py-8">
               ３、どうしてWEBコース？
             </h1>
-            <p className="text-txf sm:text-txfs px-10"></p>
+            <p className="text-txf sm:text-txfs px-10">
+              昔旅行ブログが好きでブログを通じて色々な人の旅行体験と経験をみられるから。その時WEBの魅力を感じ、WEBコースを選んた。
+            </p>
           </div>
         </div>
       </div>

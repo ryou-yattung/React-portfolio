@@ -14,12 +14,12 @@ const aboutDetail = () => {
   return (
     <section className="relative z-40 w-screen h-auto sm:h-[900px] py-14 bg-white">
       <div className="text-ftcolor">
-        <h2 className="pb-8 text-center sm:text-left text-txt sm:text-[4rem] leading-9 sm:leading-normal sm:font-bold sm:mt-[80px] sm:ml-[150px]">
+        <h2 className="pb-8 text-center sm:text-left text-txt sm:text-[4rem] leading-9 sm:leading-normal sm:font-bold sm:mt-[80px] 2xl:mt-[120px] sm:ml-[150px] 2xl:ml-[250px]">
           新しい体験をし
           <br />
           新発想を生み出す
         </h2>
-        <p className="text-txf sm:text-txfs px-8 sm:p-0 sm:mt-[30px] sm:ml-[150px] sm:w-[550px] sm:leading-7">
+        <p className="text-txf sm:text-txfs px-8 sm:p-0 sm:mt-[30px] sm:ml-[150px] 2xl:ml-[400px] sm:w-[550px] sm:leading-7 2xl:leading-10">
           自分の知らない土地、自分の知らない言語、自分の知らない人と出会い。
           まだみぬ場所に行けば自ずと学びも増え、楽しいあまりです。新しい体験をたくさんし、
           視野が広がり、新発想も生み出す分けだと思う。

@@ -10,7 +10,7 @@ const aboutBg = () => {
         自己紹介
       </h2>
 
-      <div className="relative z-20 w-screen sm:w-[1000px] h-[250px] sm:h-[600px] m-auto bg-white/20 bg-intro2 bg-cover bg-no-repeat">
+      <div className="relative z-20 w-screen sm:w-[1000px] 2xl:w-[1200px] h-[250px] sm:h-[600px] 2xl:h-[800px] m-auto bg-white/20 bg-intro2 bg-cover bg-no-repeat">
         <div className="sm:hidden bg-white/20 sm:bg-transparent w-full h-full">
           <h3 className="text-2xl font-bold tracking-widest font-ftcolor pt-20 pl-3">
             リョウイットン
