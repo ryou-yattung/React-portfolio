@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7356e825.css",
+    "main.js": "/static/js/main.cd7a8109.js",
+    "static/media/tri06.jpg": "/static/media/tri06.f174a944f0c79d59df0f.jpg",
+    "static/media/about_jap.jpeg": "/static/media/about_jap.df76878812223a8ad257.jpeg",
+    "static/media/graphic.png": "/static/media/graphic.2bec7bd1932b1fcf5d65.png",
+    "static/media/work04.png": "/static/media/work04.0ae4681249f645cba5da.png",
+    "static/media/work03.png": "/static/media/work03.2ec0b0752b1e588bedf2.png",
+    "static/media/about_map.jpeg": "/static/media/about_map.bfd0f8f9e006b0753879.jpeg",
+    "static/media/about_web.jpeg": "/static/media/about_web.6062ef4c478cb489e9e0.jpeg",
+    "static/media/rupirasu.png": "/static/media/rupirasu.0a9c4cdc41fc882073f0.png",
+    "static/media/work01.png": "/static/media/work01.d6c44981ecd21def5122.png",
+    "static/media/intro.jpg": "/static/media/intro.22b2b21f498572514e42.jpg",
+    "static/media/tri05.jpg": "/static/media/tri05.0680a99d92bff4b90513.jpg",
+    "static/media/tri04.jpg": "/static/media/tri04.522105962160b5fd965b.jpg",
+    "static/media/work02.png": "/static/media/work02.5cf7b0733ab905362c58.png",
+    "static/media/intro2.jpg": "/static/media/intro2.cb6a71192850e5906ede.jpg",
+    "static/media/tri01.jpeg": "/static/media/tri01.923b2f989e487ff38314.jpeg",
+    "static/media/about_tri.jpeg": "/static/media/about_tri.b15113ad72984ba11e98.jpeg",
+    "static/media/tri02.jpg": "/static/media/tri02.cef188ac60ab3b577d51.jpg",
+    "static/media/tri03.jpg": "/static/media/tri03.d595c6746adb591a42bb.jpg",
+    "static/media/php.png": "/static/media/php.445138cc072b03fd4d92.png",
+    "static/media/css.png": "/static/media/css.c95c6083e744bd1afac0.png",
+    "static/media/html.png": "/static/media/html.ed6e793c38031d187108.png",
+    "static/media/js.png": "/static/media/js.579e1c735f962502c4db.png",
+    "static/media/pug.svg": "/static/media/pug.e22b8f03c7f0899d14cdaf125cc7d3e9.svg",
+    "static/media/sass.svg": "/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
+    "index.html": "/index.html",
+    "static/media/tailwindcss.svg": "/static/media/tailwindcss.79614a5f61617ba49a0891494521226b.svg",
+    "main.7356e825.css.map": "/static/css/main.7356e825.css.map",
+    "main.cd7a8109.js.map": "/static/js/main.cd7a8109.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7356e825.css",
+    "static/js/main.cd7a8109.js"
+  ]
+}
