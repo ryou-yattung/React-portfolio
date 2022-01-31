@@ -34,7 +34,7 @@ function App() {
   });
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="font-Noto sm:overflow-hidden">
         {isHeightOver === true ? (
           <Intro setIsHeightOver={setIsHeightOver} />
