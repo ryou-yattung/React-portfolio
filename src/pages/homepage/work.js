@@ -32,7 +32,7 @@ const work = () => {
           Website
         </div>
 
-        <div className="hidden sm:block w-[600px] absolute z-30 left-0 bottom-0 text-ftcolor">
+        <div className="hidden sm:block w-[600px] absolute z-30 left-0 2xl:left-20 bottom-0 text-ftcolor">
           <div className="">
             <h3 className="text-txts font-bold ml-14">サイト</h3>
             <h3 className="text-txts font-bold ml-28">Website</h3>
@@ -64,7 +64,7 @@ const work = () => {
         <img
           src={Rupirasu}
           alt="work1"
-          className="object-cover sm:w-[1000px] sm:absolute sm:z-10 sm:right-0 sm:top-[140px]"
+          className="object-cover sm:w-[1000px] 2xl:w-[1300px] sm:absolute sm:z-10 sm:right-0 2xl:right-20 sm:top-[140px]"
         />
         {/* phone title */}
         <p className="absolute bottom-0 text-txfs bg-white px-2 sm:hidden">

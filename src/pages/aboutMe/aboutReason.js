@@ -7,7 +7,7 @@ const aboutReason = () => {
   return (
     <section className="relative z-0 w-screen h-auto">
       {/* bg */}
-      <div className="w-full h-screen fixed top-0 z-10 bg-aboutBg sm:bg-cover bg-center bg-no-repeat sm:opacity-40"></div>
+      <div className="w-full h-screen fixed top-0 z-10 bg-aboutBg bg-cover bg-center bg-no-repeat sm:opacity-40"></div>
       <div className="relative z-20 sm:w-[1000px] sm:h-[1700px] mx-5 my-10  sm:m-auto">
         <div className="hidden sm:block absolute top-10 left-0 w-[300px] h-auto bg-white shadow-lg cursor-pointer">
           <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
