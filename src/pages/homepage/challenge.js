@@ -11,7 +11,7 @@ const challenge = () => {
 
       <div className="flex justify-around align-center flex-wrap sm:flex-nowrap overflow-scroll">
         <div className="text-center w-[400px] px-9 mb-16">
-          <h3 className="text-txt sm:text-txts">ゲンゴ</h3>
+          <h3 className="text-txt text-ftcolor sm:text-txts">ゲンゴ</h3>
           <h4 className="text-txf text-[#71613f] font-bold mb-8">LANGUAGE</h4>
           <img src={Book} alt="book" className="w-[100px] m-auto mb-8" />
           <p className="text-left text-txf sm:text-txfs">
@@ -21,8 +21,8 @@ const challenge = () => {
         </div>
 
         <div className="text-center w-[400px] px-9 mb-16">
-          <h3 className="text-txt sm:text-txts">デザイン</h3>
-          <h4 className="text-txf text-[#71613f] font-bold mb-8">DESIGN</h4>
+          <h3 className="text-txt text-ftcolor sm:text-txts">デザイン</h3>
+          <h4 className="text-txf  text-[#71613f] font-bold mb-8">DESIGN</h4>
           <img src={Pen} alt="pen" className="w-[100px] m-auto mb-8" />
           <p className="text-left text-txf sm:text-txfs">
             WEBデザインコースから色々なデザインツールを
@@ -32,7 +32,7 @@ const challenge = () => {
         </div>
 
         <div className="text-center w-[400px] px-9 mb-16">
-          <h3 className="text-txt sm:text-txts">コーディング</h3>
+          <h3 className="text-txt text-ftcolor sm:text-txts">コーディング</h3>
           <h4 className="text-txf text-[#71613f] font-bold mb-8">CODING</h4>
           <img
             src={Computer}

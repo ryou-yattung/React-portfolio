@@ -19,30 +19,45 @@ function App() {
     setIsopen(!isOpen);
   };
 
+  // toTop
+  const toTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  // bottomHg
+  const [hgState, setHgState] = useState(false);
+
   useEffect(() => {
-    const hideMenu = () => {
-      if (isOpen) {
-        setIsopen(false);
+    const getBottom = document.documentElement.scrollHeight;
+    // console.log(getBottom);
+
+    const scrollUp = () => {
+      if (
+        document.scrollingElement.scrollTop >=
+        getBottom - window.innerHeight
+      ) {
+        setHgState(true);
+        // console.log("aaa");
+      } else {
+        setHgState(false);
+        // console.log("bbb");
       }
     };
 
-    window.addEventListener("resize", hideMenu);
-
-    return () => {
-      window.removeEventListener("resize", hideMenu);
-    };
+    window.addEventListener("scroll", scrollUp);
+    return () => window.removeEventListener("scroll", scrollUp);
   });
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="font-Noto sm:overflow-hidden">
         {isHeightOver === true ? (
-          <Intro setIsHeightOver={setIsHeightOver} />
+          <Intro setIsHeightOver={setIsHeightOver} toTop={toTop} />
         ) : (
           <div className="relative z-50 w-screen h-auto">
             <div className="absolute z-50">
               <Navbar isOpen={isOpen} toggle={toggle} />
-              <Menu isOpen={isOpen} toggle={toggle} />
+              <Menu isOpen={isOpen} toggle={toggle} toTop={toTop} />
             </div>
 
             <Routes>
@@ -51,7 +66,7 @@ function App() {
               <Route path="/works" element={<Works />} />
             </Routes>
 
-            <Footer setIsHeightOver={setIsHeightOver} />
+            <Footer isHeightOver={isHeightOver} hgState={hgState} />
           </div>
         )}
       </div>

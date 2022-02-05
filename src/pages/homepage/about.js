@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import MyImg from "../../img/intro2.jpg";
 
 const about = () => {
-  const toTop = () => {
-    window.scrollTo(0, 0);
-  };
   return (
     <section className="relative z-20 w-screen h-auto sm:before:w-[calc(100%-30px)]  sm:before:h-[1150px] before:block before:absolute before:z-10 before:top-[-30vh] sm:before:bg-bgcolor1">
       <div className="relative z-30 w-screen h-full bg-bgcolor1 pb-10 sm:p-0 sm:bg-transparent">
@@ -53,7 +50,7 @@ const about = () => {
           <Link
             className="block border-4 border-ftcolor bg-bgcolor1 text-txfs sm:text-2xl sm:leading-[60px] leading-[40px] text-center ease-in duration-200 hover:text-bgcolor1 hover:bg-ftcolor"
             to="/aboutMe"
-            onClick={toTop}
+            onClick={() => window.scrollTo(0, 0)}
           >
             もっと詳しく
           </Link>

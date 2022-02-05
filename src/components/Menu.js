@@ -5,12 +5,7 @@ import { faGlobeAmericas } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
-const Menu = ({ isOpen, toggle }) => {
-  const toTop = () => {
-    if (isOpen) {
-      window.scrollTo(0, 0);
-    }
-  };
+const Menu = ({ isOpen, toggle, toTop }) => {
   return (
     <nav
       className={`fixed w-full h-full top-0 z-40 transition-[] duration-500 bg-bgcolor1 text-white

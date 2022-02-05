@@ -4,9 +4,12 @@ import Rupirasu from "../../img/rupirasu.png";
 import graphic from "../../img/graphic.png";
 
 const work = () => {
-  const toTop = () => {
-    window.scrollTo(0, 0);
-  };
+  //workBlock
+  // const [workBlock, setWorkBlock] = useState(true);
+  // const workNone = () => {
+  //   setWorkBlock(!workBlock);
+  // };
+  // workNone();
 
   return (
     <section className="w-full h-auto">
@@ -111,7 +114,7 @@ const work = () => {
         <Link
           className="block border-4 border-ftcolor bg-ftcolor text-white text-txfs sm:text-2xl sm:leading-[60px] leading-[40px] text-center ease-in duration-200 hover:text-ftcolor hover:bg-white"
           to="/works"
-          onClick={toTop}
+          onClick={() => window.scrollTo(0, 0)}
         >
           もっと詳しく
         </Link>

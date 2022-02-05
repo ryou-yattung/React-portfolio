@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import JpImg from "../../img/about_jap.jpeg";
 import TriImg from "../../img/about_tri.jpeg";
 import WebImg from "../../img/about_web.jpeg";
@@ -21,7 +22,7 @@ const aboutReason = () => {
           </p>
         </div>
 
-        <div className="sm:absolute top-10 right-0 sm:w-[600px] h-auto text-ftcolor">
+        <div className="aaaa sm:absolute top-10 right-0 sm:w-[600px] h-auto text-ftcolor">
           <div className="sm:w-[600px] h-auto mb-10 pb-10 bg-white shadow-2xl">
             <img
               className="w-full sm:h-[300px] object-cover"

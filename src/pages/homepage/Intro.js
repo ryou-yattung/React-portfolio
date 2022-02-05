@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 // fadeOut
-const Intro = ({ setIsHeightOver }) => {
+const Intro = ({ setIsHeightOver, toTop }) => {
   const fadeOut = (node, duration) => {
     node.style.opacity = 1;
 
@@ -25,11 +25,11 @@ const Intro = ({ setIsHeightOver }) => {
   const changeDisplayState = () => {
     if (document.scrollingElement.scrollTop > 30) {
       fadeOut(document.querySelector(".fo"), 1200);
-      const mo = () => {
+
+      setTimeout(() => {
         setIsHeightOver(false);
-        window.scrollTo(0, 0);
-      };
-      setTimeout(mo, 1200);
+        toTop();
+      }, 1100);
     }
   };
 
@@ -40,7 +40,6 @@ const Intro = ({ setIsHeightOver }) => {
 
   return (
     <div className="fo h-[calc(100vh+50px)]">
-      {/* <div className={isHeightOver ? "block" : "opacity-0"}> */}
       <div className="fixed w-screen h-screen introBg">
         <div className="absolute top-52 sm:60 left-10 sm:left-20">
           <h1 className="text-txt sm:text-txts font-bold text-white tracking-widest leading-normal">
