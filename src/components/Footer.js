@@ -28,7 +28,7 @@ const Footer = ({ hgState }) => {
         {/* animeFly transformA */}
         <div
           className={`group w-7 h-7 sm:w-10 sm:h-10 absolute right-[calc(50%-10px)] sm:right-1/2 bottom-[15%] cursor-pointer transformA
-          ${hgState ? "animeFly" : ""}`}
+          ${hgState ? "animeFly" : "animate-none"}`}
           onClick={() => scroll.scrollTo(0)}
         >
           <img className="" src={Fly} alt="flyAction" />

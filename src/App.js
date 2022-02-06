@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Intro from "./pages/homepage/Intro";
 import Navbar from "./components/Navbar";
@@ -11,6 +11,29 @@ import Footer from "./components/Footer";
 function App() {
   // intro
   const [isHeightOver, setIsHeightOver] = useState(true);
+
+  //wide¥thSet
+  const [size, setSize] = useState({ setSize: undefined });
+
+  useEffect(() => {
+    const introWidth = () => {
+      setSize({
+        width: window.innerWidth,
+      });
+    };
+    console.log(size);
+
+    window.addEventListener("resize", introWidth);
+    return () => window.removeEventListener("resize", introWidth);
+  }, []);
+
+  // if width(size)>768=f
+  // useEffect(() => {
+  //   if (size.width > 768 && isHeightOver) {
+  //     setIsHeightOver(false);
+  //     console.log(isHeightOver);
+  //   }
+  // }, [size.width, isHeightOver]);
 
   //menu
   const [isOpen, setIsopen] = useState(false);
@@ -29,7 +52,6 @@ function App() {
 
   useEffect(() => {
     const getBottom = document.documentElement.scrollHeight;
-    // console.log(getBottom);
 
     const scrollUp = () => {
       if (

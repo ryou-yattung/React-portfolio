@@ -18,8 +18,9 @@
   transform: scale(-1, 1);
 }
 .animeFly {
-  animation: animeFly 5s ease 1;
-  animation-fill-mode: forwards;
+  /* animation: animeFly 2s ease-out 1;
+  animation-fill-mode: forwards; */
+  @apply sm:animate-[animeFly_2s_ease-in-out_forwards];
 }
 @keyframes animeFly {
   0% {
