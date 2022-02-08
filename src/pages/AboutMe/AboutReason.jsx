@@ -1,24 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link as Scroll } from "react-scroll";
 import JpImg from "../../img/about_jap.jpeg";
 import TriImg from "../../img/about_tri.jpeg";
 import WebImg from "../../img/about_web.jpeg";
 
 const AboutReason = () => {
-  const aaa = () => {
-    console.log(this);
+  const [scrollState, setScrollState] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+
+  const whyShow = () => {
+    setScrollTop(document.scrollingElement.scrollTop);
+
+    const reasonScroll = document.querySelector(".reasonScroll");
+    const reasonScrollTop = reasonScroll.scrollHeight;
+
+    if (scrollTop >= reasonScrollTop && scrollTop <= reasonScrollTop + 1300) {
+      setScrollState(true);
+      console.log("dddd");
+    } else {
+      setScrollState(false);
+      console.log("ccc");
+    }
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", whyShow);
+    return () => window.removeEventListener("scroll", whyShow);
+  });
+
   return (
-    <section className="relative z-0 w-screen h-auto">
+    <section className="reasonScroll relative z-0 w-screen h-auto">
       {/* bg */}
       <div className="w-full h-screen fixed top-0 z-10 bg-aboutBg bg-cover bg-center bg-no-repeat sm:opacity-40"></div>
-      <div className="relative z-20 sm:w-[1000px] sm:h-[1700px] mx-5 my-10  sm:m-auto">
-        <div className="hidden sm:block absolute top-10 left-0 w-[300px] h-auto bg-white shadow-lg cursor-pointer">
+
+      {/* <div className="reasonScroll relative z-20 sm:w-[1000px] sm:h-[1700px] mx-5 my-10  sm:m-auto"> */}
+      <div className="relative z-20 sm:h-[1700px] mx-5 my-10  sm:m-auto">
+        <div
+          className={`hidden fixed top-10 sm:block sm:left-[10%] 2xl:left-[20%] w-[300px] h-auto bg-white shadow-lg cursor-pointer ease-in duration-300
+          ${scrollState ? "opacity-100 fixed top-0" : "opacity-0"}`}
+        >
           <Scroll to="whyJapan" smooth={true} duration={800}>
             <p
               className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white"
-              onClick={aaa}
+              // onClick={}
             >
               １、どうして日本に？
             </p>
@@ -38,7 +62,7 @@ const AboutReason = () => {
         </div>
 
         <div
-          className="sm:absolute top-10 right-0 sm:w-[600px] h-auto text-ftcolor"
+          className="sm:absolute top-10 sm:right-[10%] 2xl-[15%] sm:w-[600px] h-auto text-ftcolor"
           id="whyJapan"
         >
           <div className="sm:w-[600px] h-auto mb-10 pb-10 bg-white shadow-2xl">
