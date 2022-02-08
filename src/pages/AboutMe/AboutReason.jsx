@@ -5,6 +5,10 @@ import TriImg from "../../img/about_tri.jpeg";
 import WebImg from "../../img/about_web.jpeg";
 
 const AboutReason = () => {
+  const aaa = () => {
+    console.log(this);
+  };
+
   return (
     <section className="relative z-0 w-screen h-auto">
       {/* bg */}
@@ -12,7 +16,10 @@ const AboutReason = () => {
       <div className="relative z-20 sm:w-[1000px] sm:h-[1700px] mx-5 my-10  sm:m-auto">
         <div className="hidden sm:block absolute top-10 left-0 w-[300px] h-auto bg-white shadow-lg cursor-pointer">
           <Scroll to="whyJapan" smooth={true} duration={800}>
-            <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
+            <p
+              className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white"
+              onClick={aaa}
+            >
               １、どうして日本に？
             </p>
           </Scroll>

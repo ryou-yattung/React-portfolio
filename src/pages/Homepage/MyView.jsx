@@ -21,7 +21,7 @@ const MyView = () => {
       </div>
 
       <div className="hidden sm:block w-[400px] h-auto absolute bottom-[15%] sm:left-[65px] bg-white/60">
-        <p className="text-txf font-semibold py-5 px-5">
+        <p className="text-txf font-semibold p-5 2xl:py-6 sm:leading-5 2xl:leading-6">
           自分の知らない土地、自分の知らない言語、自分
           の知らない人と出会い。まだみぬ場所に行けば自ず
           と学びも増え、楽しいあまりです。新しい体験をた

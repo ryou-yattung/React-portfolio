@@ -50,10 +50,8 @@ function App() {
         getBottom - window.innerHeight
       ) {
         setHgState(true);
-        // console.log("aaa");
       } else {
         setHgState(false);
-        // console.log("bbb");
       }
     };
 

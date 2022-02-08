@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Rupirasu from "../../img/rupirasu.png";
 import graphic from "../../img/graphic.png";
 
 const Work = () => {
-  // workBlock
-  // const [workBlock, setWorkBlock] = useState(true);
-  // const workNone = () => {
-  //   setWorkBlock(!workBlock);
-  // };
-  // workNone();
+  const [workState, setWorkState] = useState(true);
+
+  const webChange = () => {
+    setWorkState(true);
+  };
+
+  const graChange = () => {
+    setWorkState(false);
+  };
 
   return (
     <section className="w-full h-auto">
@@ -20,17 +23,34 @@ const Work = () => {
         </div>
 
         <div className="hidden relative sm:flex mr-20 mt-20 h-[75px] w-[400px] after:absolute after:bottom-0 after:block after:h-1 after:w-full after:bg-ftcolor">
-          <p className="w-1/2 text-txfs text-center leading-[70px] text-white bg-ftcolor cursor-pointer">
+          <p
+            onClick={webChange}
+            className={`w-1/2 text-txfs text-center leading-[70px] cursor-pointer ${
+              workState === true
+                ? "bg-ftcolor text-white"
+                : "bg-white text-ftcolor"
+            }`}
+          >
             サイト
           </p>
-          <p className="w-1/2 text-txfs text-center leading-[70px] cursor-pointer">
+          <p
+            onClick={graChange}
+            className={`w-1/2 text-txfs text-center leading-[70px] cursor-pointer ${
+              workState === false
+                ? "bg-ftcolor text-white"
+                : "bg-white text-ftcolor"
+            }`}
+          >
             グラフィック
           </p>
         </div>
       </div>
 
       {/* works(web) */}
-      <div className="sm:block relative w-full h-auto sm:h-[900px] px-5">
+      <div
+        className={`relative w-full h-auto sm:h-[900px] px-5
+      ${workState ? "sm:block" : "hidden"}`}
+      >
         <div className="hidden sm:block absolute text-[13rem] text-[#372F1F60] tracking-widest leading-none font-bold">
           Website
         </div>
@@ -76,7 +96,10 @@ const Work = () => {
       </div>
 
       {/* works(graphic) */}
-      <div className="hidden  relative w-[1200px] m-auto h-[1000px] px-5 ">
+      <div
+        className={`hidden  relative w-[1200px] m-auto h-[1000px] px-5
+      ${workState ? "hidden" : "sm:block"}`}
+      >
         <div className="sm:block absolute right-0 text-[13rem] text-[#372F1F60] tracking-widest leading-none font-bold">
           Graphic
         </div>
