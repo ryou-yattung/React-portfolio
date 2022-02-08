@@ -29,7 +29,7 @@ const Intro = ({ setIsHeightOver, toTop }) => {
       setTimeout(() => {
         setIsHeightOver(false);
         toTop();
-      }, 1200);
+      }, 1100);
     }
   };
 

@@ -6,7 +6,7 @@ import Computer from "../../img/computer.png";
 const challenge = () => {
   return (
     <section className="relative z-10 w-full h-auto sm:pb-16 sm:h-auto sm:ml-[30px] sm:pt-32 bg-bgcolor2">
-      <h1 className="titleh1 sm:text-right sm:mr-20">challenge</h1>
+      <h1 className="titleh1 sm:text-right sm:mr-20">Challenge</h1>
       <h2 className="titleh2 sm:text-right sm:mr-20">常に挑戦すること</h2>
 
       <div className="flex justify-around align-center flex-wrap sm:flex-nowrap overflow-scroll">

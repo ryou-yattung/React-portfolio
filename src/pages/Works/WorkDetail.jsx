@@ -7,7 +7,7 @@ import Work04 from "../../img/work04.png";
 const workDetail = () => {
   return (
     <section className="w-screen h-auto px-10 pt-[10vh] text-ftcolor">
-      <h1 className="titleh1 sm:ml-20">WORKS</h1>
+      <h1 className="titleh1 sm:ml-20">Works</h1>
       <h2 className="titleh2 sm:ml-20">作品</h2>
 
       <div className="w-full sm:w-[1200px] m-auto my-10 sm:my-20 2xl:my-32 sm:flex flex-nowrap justify-start">

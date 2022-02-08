@@ -11,7 +11,7 @@ import Tri06 from "../../img/tri06.jpg";
 const aboutTri = () => {
   return (
     <section className="relative z-40 w-screen sm:w-full h-auto pb-10 sm:pb-20 bg-white text-ftcolor">
-      <h1 className="titleh1 sm:ml-20 sm:tracking-widest font-bold">travel</h1>
+      <h1 className="titleh1 sm:ml-20 sm:tracking-widest font-bold">Travel</h1>
       <h2 className="titleh2 sm:ml-20">旅行</h2>
       <div className="w-screen overflow-x-scroll">
         <div className="h-auto w-[2000px] sm:w-[1000px] 2xl:w-[1200px] m-auto py-10 flex flex-nowrap sm:flex-wrap justify-start sm:justify-between gap-10">

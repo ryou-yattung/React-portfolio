@@ -4,7 +4,7 @@ import Rupirasu from "../../img/rupirasu.png";
 import graphic from "../../img/graphic.png";
 
 const work = () => {
-  //workBlock
+  // workBlock
   // const [workBlock, setWorkBlock] = useState(true);
   // const workNone = () => {
   //   setWorkBlock(!workBlock);
@@ -15,12 +15,12 @@ const work = () => {
     <section className="w-full h-auto">
       <div className="sm:flex sm:flex-nowrap sm:justify-between">
         <div>
-          <h1 className="titleh1 sm:ml-20">WORKS</h1>
+          <h1 className="titleh1 sm:ml-20">Works</h1>
           <h2 className="titleh2 sm:ml-20">作品</h2>
         </div>
 
         <div className="hidden relative sm:flex mr-20 mt-20 h-[75px] w-[400px] after:absolute after:bottom-0 after:block after:h-1 after:w-full after:bg-ftcolor">
-          <p className="w-1/2 text-txfs text-center leading-[70px] bg-ftcolor cursor-pointer">
+          <p className="w-1/2 text-txfs text-center leading-[70px] text-white bg-ftcolor cursor-pointer">
             サイト
           </p>
           <p className="w-1/2 text-txfs text-center leading-[70px] cursor-pointer">

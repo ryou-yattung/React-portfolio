@@ -1,5 +1,5 @@
 import React from "react";
-import { animateScroll as scroll } from "react-scroll";
+import { Link as Scroll } from "react-scroll";
 import JpImg from "../../img/about_jap.jpeg";
 import TriImg from "../../img/about_tri.jpeg";
 import WebImg from "../../img/about_web.jpeg";
@@ -11,18 +11,29 @@ const aboutReason = () => {
       <div className="w-full h-screen fixed top-0 z-10 bg-aboutBg bg-cover bg-center bg-no-repeat sm:opacity-40"></div>
       <div className="relative z-20 sm:w-[1000px] sm:h-[1700px] mx-5 my-10  sm:m-auto">
         <div className="hidden sm:block absolute top-10 left-0 w-[300px] h-auto bg-white shadow-lg cursor-pointer">
-          <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
-            １、どうして日本に？
-          </p>
-          <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
-            ２、どうして旅行が好き？
-          </p>
-          <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
-            ３、どうしてWEBコース？
-          </p>
+          <Scroll to="whyJapan" smooth={true} duration={800}>
+            <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
+              １、どうして日本に？
+            </p>
+          </Scroll>
+
+          <Scroll to="whyTri" smooth={true} duration={800}>
+            <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
+              ２、どうして旅行が好き？
+            </p>
+          </Scroll>
+
+          <Scroll to="whyWeb" smooth={true} duration={800}>
+            <p className="text-txfs text-ftcolor p-12 ease duration-300 hover:bg-ftcolor hover:text-white">
+              ３、どうしてWEBコース？
+            </p>
+          </Scroll>
         </div>
 
-        <div className="aaaa sm:absolute top-10 right-0 sm:w-[600px] h-auto text-ftcolor">
+        <div
+          className="sm:absolute top-10 right-0 sm:w-[600px] h-auto text-ftcolor"
+          id="whyJapan"
+        >
           <div className="sm:w-[600px] h-auto mb-10 pb-10 bg-white shadow-2xl">
             <img
               className="w-full sm:h-[300px] object-cover"
@@ -36,7 +47,11 @@ const aboutReason = () => {
               中学生の時、一回日本に旅行へ行って日本の景色を見た後、好きになった。日本は香港と違って四季がはっきりしているから、それは香港が決して見られないことだからです。
             </p>
           </div>
-          <div className="sm:w-[600px] h-auto mb-10 pb-10 bg-white shadow-2xl">
+
+          <div
+            className="sm:w-[600px] h-auto mb-10 pb-10 bg-white shadow-2xl"
+            id="whyTri"
+          >
             <img
               className="w-full sm:h-[300px] object-cover"
               src={TriImg}
@@ -49,7 +64,11 @@ const aboutReason = () => {
               香港にいる時、たまに国際交流会に参加していた。様々な国籍な人と出会って、色々な異文化の話を聞いて、外国に行ってみたいなという気持ちが現れた。
             </p>
           </div>
-          <div className="sm:w-[600px] h-auto mb-10 pb-10 bg-white shadow-2xl">
+
+          <div
+            className="sm:w-[600px] h-auto mb-10 pb-10 bg-white shadow-2xl"
+            id="whyWeb"
+          >
             <img
               className="w-full sm:h-[300px] object-cover"
               src={WebImg}

@@ -1,8 +1,8 @@
 import React from "react";
-import About from "./homepage/about";
-import MyView from "./homepage/myView";
-import Challenge from "./homepage/challenge";
-import Work from "./homepage/work";
+import About from "./Homepage/About";
+import MyView from "./Homepage/MyView";
+import Challenge from "./Homepage/Challenge";
+import Work from "./Homepage/Work";
 
 const homepage = () => {
   return (

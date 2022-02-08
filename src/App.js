@@ -1,39 +1,30 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Intro from "./pages/homepage/Intro";
+import Intro from "./pages/Homepage/Intro";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
-import Homepage from "./pages/homepage";
-import AboutMe from "./pages/aboutMe";
-import Works from "./pages/works";
+import Homepage from "./pages/Homepage";
+import AboutMe from "./pages/AboutMe";
+import Works from "./pages/Works";
 import Footer from "./components/Footer";
 
 function App() {
   // intro
   const [isHeightOver, setIsHeightOver] = useState(true);
 
-  //wide¥thSet
-  const [size, setSize] = useState({ setSize: undefined });
-
+  //widthSet < 768 isHeightOver(hidden)
   useEffect(() => {
     const introWidth = () => {
-      setSize({
-        width: window.innerWidth,
-      });
+      if (window.innerWidth < 768) {
+        setIsHeightOver(false);
+      } else {
+        setIsHeightOver(true);
+      }
     };
-    console.log(size);
 
-    window.addEventListener("resize", introWidth);
-    return () => window.removeEventListener("resize", introWidth);
+    introWidth();
+    return () => introWidth();
   }, []);
-
-  // if width(size)>768=f
-  // useEffect(() => {
-  //   if (size.width > 768 && isHeightOver) {
-  //     setIsHeightOver(false);
-  //     console.log(isHeightOver);
-  //   }
-  // }, [size.width, isHeightOver]);
 
   //menu
   const [isOpen, setIsopen] = useState(false);

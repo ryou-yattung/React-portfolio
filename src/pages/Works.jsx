@@ -1,11 +1,11 @@
 import React from "react";
-import WorkDetail from "./works/workDetail";
+import WorkDetail from "./Works/WorkDetail";
 
 const index = () => {
   return (
-    <div>
+    <>
       <WorkDetail />
-    </div>
+    </>
   );
 };
 

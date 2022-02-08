@@ -29,8 +29,8 @@ const myView = () => {
         </p>
       </div>
 
-      <div className="hidden sm:block absolute bottom-[3%] right-[200px]">
-        <h2 className="text-[10rem] text-white tracking-[3rem]">travel</h2>
+      <div className="hidden sm:block absolute bottom-[3%] right-[150px]">
+        <h2 className="text-[10rem] text-white tracking-[2.5rem]">Travel</h2>
       </div>
 
       <div className="absolute bottom-0 right-10 sm:right-20 flex justify-between w-10 h-[15%]">
