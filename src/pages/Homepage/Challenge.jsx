@@ -3,7 +3,7 @@ import Book from "../../img/book.png";
 import Pen from "../../img/pen.png";
 import Computer from "../../img/computer.png";
 
-const challenge = () => {
+const Challenge = () => {
   return (
     <section className="relative z-10 w-full h-auto sm:pb-16 sm:h-auto sm:ml-[30px] sm:pt-32 bg-bgcolor2">
       <h1 className="titleh1 sm:text-right sm:mr-20">Challenge</h1>
@@ -50,4 +50,4 @@ const challenge = () => {
   );
 };
 
-export default challenge;
+export default Challenge;

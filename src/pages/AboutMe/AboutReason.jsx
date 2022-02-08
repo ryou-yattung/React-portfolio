@@ -4,7 +4,7 @@ import JpImg from "../../img/about_jap.jpeg";
 import TriImg from "../../img/about_tri.jpeg";
 import WebImg from "../../img/about_web.jpeg";
 
-const aboutReason = () => {
+const AboutReason = () => {
   return (
     <section className="relative z-0 w-screen h-auto">
       {/* bg */}
@@ -87,4 +87,4 @@ const aboutReason = () => {
   );
 };
 
-export default aboutReason;
+export default AboutReason;

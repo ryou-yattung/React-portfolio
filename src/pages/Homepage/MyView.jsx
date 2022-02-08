@@ -1,7 +1,7 @@
 import React from "react";
 import Intro from "../../img/intro.jpg";
 
-const myView = () => {
+const MyView = () => {
   return (
     <section className="w-screen h-screen relative z-30 overflow-hidden">
       <div className="w-full h-full sm:h-[85%]  sm:bg-none">
@@ -41,4 +41,4 @@ const myView = () => {
   );
 };
 
-export default myView;
+export default MyView;

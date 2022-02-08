@@ -5,15 +5,13 @@ import AboutReason from "./AboutMe/AboutReason";
 import AboutTri from "./AboutMe/AboutTri";
 
 const AboutMe = () => {
-  // const [aaa, setAaa] = useState(0);
-  // console.log(aaa);
   return (
-    <div>
+    <>
       <AboutBg />
       <AboutDetail />
       <AboutReason />
       <AboutTri />
-    </div>
+    </>
   );
 };
 

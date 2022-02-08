@@ -10,7 +10,7 @@ import Php from "../../img/php.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const aboutDetail = () => {
+const AboutDetail = () => {
   return (
     <section className="relative z-40 w-screen h-auto sm:h-[900px] py-14 bg-white">
       <div className="text-ftcolor">
@@ -146,4 +146,4 @@ const aboutDetail = () => {
   );
 };
 
-export default aboutDetail;
+export default AboutDetail;

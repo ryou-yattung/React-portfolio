@@ -1,7 +1,7 @@
 import React from "react";
 import WorkDetail from "./Works/WorkDetail";
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <WorkDetail />
@@ -9,4 +9,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -8,7 +8,7 @@ import Tri04 from "../../img/tri04.jpg";
 import Tri05 from "../../img/tri05.jpg";
 import Tri06 from "../../img/tri06.jpg";
 
-const aboutTri = () => {
+const AboutTri = () => {
   return (
     <section className="relative z-40 w-screen sm:w-full h-auto pb-10 sm:pb-20 bg-white text-ftcolor">
       <h1 className="titleh1 sm:ml-20 sm:tracking-widest font-bold">Travel</h1>
@@ -149,4 +149,4 @@ const aboutTri = () => {
   );
 };
 
-export default aboutTri;
+export default AboutTri;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const aboutBg = () => {
+const AboutBg = () => {
   return (
     <section className="relative z-40 w-screen sm:h-screen pt-[10vh] sm:p-0 bg-white">
       <h1 className="relative z-30 text-txt sm:text-txh1 text-center text-ftcolor font-bold sm:translate-y-16 ">
@@ -33,4 +33,4 @@ const aboutBg = () => {
   );
 };
 
-export default aboutBg;
+export default AboutBg;

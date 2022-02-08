@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Rupirasu from "../../img/rupirasu.png";
 import graphic from "../../img/graphic.png";
 
-const work = () => {
+const Work = () => {
   // workBlock
   // const [workBlock, setWorkBlock] = useState(true);
   // const workNone = () => {
@@ -123,4 +123,4 @@ const work = () => {
   );
 };
 
-export default work;
+export default Work;

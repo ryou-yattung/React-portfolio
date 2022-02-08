@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MyImg from "../../img/intro2.jpg";
 
-const about = () => {
+const About = () => {
   return (
     <section className="relative z-20 w-screen h-auto sm:before:w-[calc(100%-30px)]  sm:before:h-[1150px] before:block before:absolute before:z-10 before:top-[-30vh] sm:before:bg-bgcolor1">
       <div className="relative z-30 w-screen h-full bg-bgcolor1 pb-10 sm:p-0 sm:bg-transparent">
@@ -60,4 +60,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

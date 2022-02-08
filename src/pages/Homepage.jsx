@@ -4,7 +4,7 @@ import MyView from "./Homepage/MyView";
 import Challenge from "./Homepage/Challenge";
 import Work from "./Homepage/Work";
 
-const homepage = () => {
+const Homepage = () => {
   return (
     <>
       <MyView />
@@ -15,4 +15,4 @@ const homepage = () => {
   );
 };
 
-export default homepage;
+export default Homepage;
