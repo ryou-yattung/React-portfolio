@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Work01 from "../../img/work01.png";
 import Work02 from "../../img/work02.png";
 import Work03 from "../../img/work03.png";
@@ -37,12 +38,20 @@ const workDetail = () => {
             </div>
 
             <div className="w-full m-auto flex justify-between">
-              <a className="text-txfs font-bold bg-bgcolor1 px-16 py-5">
+              <p className="text-txfs font-bold bg-bgcolor1 px-16 py-5 cursor-pointer">
                 もっと詳しく
-              </a>
-              <a className="text-txfs font-bold bg-ftcolor text-white px-16 py-5">
+              </p>
+              <p
+                onClick={() =>
+                  window.open(
+                    "https://click.ecc.ac.jp/ecc/yattung/portfolio/work/RUPINASU/homepage.html ",
+                    "_blank"
+                  )
+                }
+                className="text-txfs font-bold bg-ftcolor text-white px-16 py-5 cursor-pointer"
+              >
                 サイトを見る
-              </a>
+              </p>
             </div>
           </div>
         </div>
@@ -72,13 +81,18 @@ const workDetail = () => {
               <p className="mr-8 text-txfs font-bold">TAILWINDCSS</p>
             </div>
 
-            <div className="w-full m-auto flex justify-between">
+            <div className="w-full m-auto flex justify-between cursor-pointer">
               <a className="text-txfs font-bold bg-bgcolor1 px-16 py-5">
                 もっと詳しく
               </a>
-              <a className="text-txfs font-bold bg-ftcolor text-white px-16 py-5">
+
+              <Link
+                to="/"
+                className="text-txfs font-bold bg-ftcolor text-white px-16 py-5 cursor-pointer"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 サイトを見る
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -111,12 +125,20 @@ const workDetail = () => {
             </div>
 
             <div className="w-full m-auto flex justify-between">
-              <a className="text-txfs font-bold bg-bgcolor1 px-16 py-5">
+              <p className="text-txfs font-bold bg-bgcolor1 px-16 py-5 cursor-pointer">
                 もっと詳しく
-              </a>
-              <a className="text-txfs font-bold bg-ftcolor text-white px-16 py-5">
+              </p>
+              <p
+                onClick={() =>
+                  window.open(
+                    "https://click.ecc.ac.jp/ecc/yattung/portfolio/work/botitabi/",
+                    "_blank"
+                  )
+                }
+                className="text-txfs font-bold bg-ftcolor text-white px-16 py-5 cursor-pointer"
+              >
                 サイトを見る
-              </a>
+              </p>
             </div>
           </div>
         </div>
@@ -148,12 +170,20 @@ const workDetail = () => {
             </div>
 
             <div className="w-full m-auto flex justify-between">
-              <a className="text-txfs font-bold bg-bgcolor1 px-16 py-5">
+              <p className="text-txfs font-bold bg-bgcolor1 px-16 py-5 cursor-pointer">
                 もっと詳しく
-              </a>
-              <a className="text-txfs font-bold bg-ftcolor text-white px-16 py-5">
+              </p>
+              <p
+                onClick={() =>
+                  window.open(
+                    "https://click.ecc.ac.jp/ecc/yattung/portfolio/work/KICHA/web/",
+                    "_blank"
+                  )
+                }
+                className="text-txfs font-bold bg-ftcolor text-white px-16 py-5 cursor-pointer"
+              >
                 サイトを見る
-              </a>
+              </p>
             </div>
           </div>
         </div>
