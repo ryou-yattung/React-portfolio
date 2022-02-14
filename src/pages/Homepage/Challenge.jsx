@@ -15,8 +15,7 @@ const Challenge = () => {
           <h4 className="text-txf text-[#71613f] font-bold mb-8">LANGUAGE</h4>
           <img src={Book} alt="book" className="w-[100px] m-auto mb-8" />
           <p className="text-left text-txf sm:text-txfs">
-            日本に来てから、ずっと日本語を勉強していま
-            す。最初は日本語全然喋られなかったけど、今では日本語能力試験N1に合格しました。
+            日本に来てから、ずっと日本語を勉強しています。最初は日本語全然喋られなかったけど、今では日本語能力試験N1に合格しました。
           </p>
         </div>
 
@@ -25,9 +24,7 @@ const Challenge = () => {
           <h4 className="text-txf  text-[#71613f] font-bold mb-8">DESIGN</h4>
           <img src={Pen} alt="pen" className="w-[100px] m-auto mb-8" />
           <p className="text-left text-txf sm:text-txfs">
-            WEBデザインコースから色々なデザインツールを
-            勉強し、身につけました。中崎町キャン
-            ドルナイトというポスター募集に参加して1位を収まりました。
+            WEBデザインコースから色々なデザインツールを勉強し、身につけました。中崎町キャンドルナイトというポスター募集に参加して1位を収まりました。
           </p>
         </div>
 
@@ -40,9 +37,7 @@ const Challenge = () => {
             className="w-[100px] m-auto mb-8"
           />
           <p className="text-left text-txf sm:text-txfs">
-            フロントエンドエンジニアを目指し、学校以外の時間
-            にデータベースを独学で勉強しています。今ではPHPでログイン機能がで
-            きるようになりました。
+            フロントエンドエンジニアを目指し、学校以外の時間にデータベースを独学で勉強しています。今ではPHPでログイン機能ができるようになりました。
           </p>
         </div>
       </div>

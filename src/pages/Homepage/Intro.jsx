@@ -23,7 +23,7 @@ const Intro = ({ setIsHeightOver, toTop }) => {
 
   //scroll function
   const changeDisplayState = () => {
-    if (document.scrollingElement.scrollTop > 30) {
+    if (document.scrollingElement.scrollTop > 50) {
       fadeOut(document.querySelector(".fo"), 1200);
 
       setTimeout(() => {
@@ -39,7 +39,7 @@ const Intro = ({ setIsHeightOver, toTop }) => {
   });
 
   return (
-    <div className="fo h-[calc(100vh+50px)]">
+    <div className="fo h-[calc(100vh+70px)]">
       <div className="fixed w-screen h-screen introBg">
         <div className="absolute top-52 sm:60 left-10 sm:left-20">
           <h1 className="text-txt sm:text-txts font-bold text-white tracking-widest leading-normal">

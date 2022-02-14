@@ -1,0 +1,50 @@
+[
+  {
+    "num": 0,
+    "id": "01",
+    "name": ["るぴなす", "RUPINASU"],
+    "intro": "るぴなすは若い歳で妊娠した女性や、妊娠したかもしれないと悩む女性に相談する場を設け、 女性にとっても赤ちゃんにとっても、最悪の事態を避けたい。という思いから実現したサービスです。",
+    "fail": "FFF",
+    "study": "SSS",
+    "detail": ["チーム制作", "2年前期"],
+    "code": ["PUG　", "SASS　", "JS　", "PHP　"],
+    "link": "https://click.ecc.ac.jp/ecc/yattung/portfolio/work/RUPINASU/homepage.html",
+    "githut": "https://github.com/ryou-yattung/rupinasu"
+  },
+  {
+    "num": 1,
+    "id": "02",
+    "name": ["ぼちたび", "BOTITABI"],
+    "intro": "新型コロナの影響で大人数での旅行ができない今、注目されるのが一人旅です。このアプリは一人旅をするだけでなく楽しさや便利さを両立させるため共有や穴場機能など他にはない魅力があります。",
+    "fail": "FFF",
+    "study": "SSS",
+    "detail": ["チーム制作", "１年後期"],
+    "code": ["PUG　", "SASS　", "JS　", "PHP　"],
+    "link": "https://click.ecc.ac.jp/ecc/yattung/portfolio/work/botitabi/",
+    "githut": "https://github.com/ryou-yattung/botitabi"
+  },
+  {
+    "num": 2,
+    "id": "03",
+    "name": ["喫茶", "KICHA"],
+    "intro": "季茶は梅田にある喫茶店である。平日は喫茶店で、週末は陶芸教室である。梅田は色々な学校があるから、授業が終わった後、お茶一杯飲んで勉強が集中できる。陶芸教室は自分の手で自分のカップを作り、店に来るときにカップは持参できる。",
+    "fail": "FFF",
+    "study": "SSS",
+    "detail": ["個人制作", "１年前期"],
+    "code": ["HTML　", "CSS　", "JS　"],
+    "link": "https://click.ecc.ac.jp/ecc/yattung/portfolio/work/KICHA/web/",
+    "githut": "https://github.com/ryou-yattung/KICHA"
+  },
+  {
+    "num": 3,
+    "id": "04",
+    "name": ["ポートフォリオ", "PORTFOLIO"],
+    "intro": "リョウイッツトンのポートフォリオです。自分紹介サイトで、人生の軸、趣味、自分のこれまでやっていた作品などを全部このサイトに載せます。",
+    "fail": "FFF",
+    "study": "SSS",
+    "detail": ["個人制作", "2年後期"],
+    "code": ["REACT　", "TAILWINDCSS　"],
+    "link": "https://ryou-yattung.github.io/portfolio/",
+    "githut": "https://github.com/ryou-yattung/portfolio"
+  }
+]

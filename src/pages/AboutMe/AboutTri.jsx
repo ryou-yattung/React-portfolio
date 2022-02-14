@@ -25,7 +25,7 @@ const AboutTri = () => {
               <h2 className="text-2xl font-bold text-center mt-2">
                 箱根山スキー場
               </h2>
-              <div className="w-14 flex justify-start items-center m-auto">
+              <div className="w-14 flex justify-center items-center m-auto">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="mr-1 text-bgcolor2 text-txf"
@@ -46,12 +46,12 @@ const AboutTri = () => {
             />
             <div>
               <h2 className="text-2xl font-bold text-center mt-2">円月島</h2>
-              <div className="w-14 flex justify-start items-center m-auto">
+              <div className="w-20 flex justify-center items-center m-auto">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="mr-1 text-bgcolor2 text-txf"
                 />
-                <h3 className="text-txf font-bold">歌山県</h3>
+                <h3 className="text-txf font-bold">和歌山県</h3>
               </div>
               <p className="text-txf px-5 py-5">
                 最初この小島が何が有名なの？と疑問を持っていましたが、夕方は絶景だった。
@@ -68,7 +68,7 @@ const AboutTri = () => {
               <h2 className="text-2xl font-bold text-center mt-2">
                 殘波岬燈塔
               </h2>
-              <div className="w-14 flex justify-start items-center m-auto">
+              <div className="w-14 flex justify-center items-center m-auto">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="mr-1 text-bgcolor2 text-txf"
@@ -89,7 +89,7 @@ const AboutTri = () => {
             />
             <div>
               <h2 className="text-2xl font-bold text-center mt-2">岩湧山</h2>
-              <div className="w-14 flex justify-start items-center m-auto">
+              <div className="w-14 flex justify-center items-center m-auto">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="mr-1 text-bgcolor2 text-txf"
@@ -110,7 +110,7 @@ const AboutTri = () => {
             />
             <div>
               <h2 className="text-2xl font-bold text-center mt-2">若草山</h2>
-              <div className="w-14 flex justify-start items-center m-auto">
+              <div className="w-14 flex justify-center items-center m-auto">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="mr-1 text-bgcolor2 text-txf"
@@ -131,7 +131,7 @@ const AboutTri = () => {
             />
             <div>
               <h2 className="text-2xl font-bold text-center mt-2">貴船神社</h2>
-              <div className="w-12 flex justify-start items-center m-auto">
+              <div className="w-12 flex justify-center items-center m-auto">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="mr-1 text-bgcolor2 text-txf"

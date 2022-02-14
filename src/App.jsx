@@ -47,7 +47,7 @@ function App() {
     const scrollUp = () => {
       if (
         document.scrollingElement.scrollTop >=
-        getBottom - window.innerHeight
+        getBottom - window.innerHeight - 10
       ) {
         setHgState(true);
       } else {

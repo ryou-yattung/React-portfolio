@@ -34,7 +34,7 @@ const AboutReason = ({ scrollTop }) => {
         className="relative z-20 sm:h-[1700px] mx-5 my-10  sm:m-auto"
       >
         <div
-          className={`hidden fixed top-10 sm:block sm:left-[10%] 2xl:left-[20%] h-auto text-left bg-white shadow-lg cursor-pointer ease-in duration-200
+          className={`hidden fixed sm:top-20 2xl:top-32 sm:block sm:left-[10%] 2xl:left-[20%] h-auto text-left bg-white shadow-lg cursor-pointer ease-in duration-200
           ${scrollState ? "opacity-100 fixed top-0" : "opacity-0"}`}
         >
           <Scroll to="whyJapan" smooth={true} duration={800}>

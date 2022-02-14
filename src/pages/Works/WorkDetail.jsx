@@ -1,17 +1,64 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Work01 from "../../img/work01.png";
-import Work02 from "../../img/work02.png";
-import Work03 from "../../img/work03.png";
-import Work04 from "../../img/work04.png";
+import WorkList from "../../data/WorkList.json";
 
-const workDetail = () => {
+const WorkDetail = ({ setWorkNum }) => {
   return (
     <section className="w-screen h-auto px-10 pt-[10vh] text-ftcolor">
       <h1 className="titleh1 sm:ml-20">Works</h1>
       <h2 className="titleh2 sm:ml-20">作品</h2>
 
-      <div className="w-full sm:w-[1200px] m-auto my-10 sm:my-20 2xl:my-32 sm:flex flex-nowrap justify-start">
+      {/* 作品はここから */}
+      {WorkList.map((work, workDetail) => {
+        return (
+          <div
+            key={workDetail}
+            className="w-full sm:w-[1200px] m-auto my-10 sm:my-32 sm:flex flex-nowrap justify-start"
+          >
+            <img
+              src={require(`../../img/work${work.id}.png`)}
+              alt={`Work${work.id}`}
+              className="w-full sm:w-[600px] h-auto object-contain"
+            />
+
+            <div className="sm:w-[600px] h-auto sm:px-14">
+              <h3 className="text-txfs sm:text-txt font-bold text-center mt-3 sm:m-0">
+                {work.name[0] + "/" + work.name[1]}
+              </h3>
+
+              <div className="hidden sm:block">
+                <p className="text-txfs font-light my-5 text-left">
+                  {work.intro}
+                </p>
+
+                <div className="flex items-center mb-10">
+                  <h4 className="mr-3 px-4 py-2 bg-bgcolor2 font-bold">
+                    コード
+                  </h4>
+
+                  <p className="mr-8 text-txfs font-bold">{work.code}</p>
+                </div>
+
+                <div
+                  onClick={() => setWorkNum(`${work.num}`)}
+                  className="w-full m-auto flex justify-between"
+                >
+                  <p className="text-txfs font-bold bg-bgcolor1 px-16 py-5 cursor-pointer">
+                    もっと詳しく
+                  </p>
+                  <p
+                    onClick={() => window.open(`${work.link}`)}
+                    className="text-txfs font-bold bg-ftcolor text-white px-16 py-5 cursor-pointer"
+                  >
+                    サイトを見る
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+
+      {/* <div className="w-full sm:w-[1200px] m-auto my-10 sm:my-20 2xl:my-32 sm:flex flex-nowrap justify-start">
         <img
           src={Work01}
           alt="work01"
@@ -187,9 +234,9 @@ const workDetail = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
 
-export default workDetail;
+export default WorkDetail;
