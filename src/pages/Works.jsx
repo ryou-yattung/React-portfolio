@@ -1,21 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import WorkDetail from "./Works/WorkDetail";
 import Work from "./Works/Work";
-// import WorkList from "../../data/WorkList.json";
 
 const Index = () => {
+  // WorkNum change state
   const [workNum, setWorkNum] = useState(0);
-  useEffect(() => {
-    console.log(workNum);
 
-    return console.log(workNum);
-  });
+  // WorkPage change state
+  const [workDetail, setWorkDetail] = useState(false);
+
+  // console.log(workNum, workDetail);
 
   return (
-    <>
-      <WorkDetail setWorkNum={setWorkNum} />
-      <Work workNum={workNum} />
-    </>
+    <div className="relative">
+      <WorkDetail setWorkNum={setWorkNum} setWorkDetail={setWorkDetail} />
+      <Work
+        workNum={workNum}
+        workDetail={workDetail}
+        setWorkDetail={setWorkDetail}
+      />
+    </div>
   );
 };
 

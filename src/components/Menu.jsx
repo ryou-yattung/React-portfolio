@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Menu = ({ isOpen, toggle, toTop }) => {
   return (
     <nav
-      className={`fixed w-full h-full top-0 z-40 transition-[] duration-500 bg-bgcolor1 text-white
+      className={`fixed w-full h-full top-0 z-40 ease-in-out duration-700 bg-bgcolor1 text-white
       ${isOpen ? "left-[0%]" : "left-[-100%]"}`}
     >
       <div className="w-1/4 h-full absolute left-0 hidden sm:flex flex-col items-center justify-center">

@@ -57,3 +57,12 @@
 .skillFlex {
   @apply w-10 h-auto text-center text-txf text-ftcolor;
 }
+
+/* works */
+.workh3 {
+  @apply text-2xl sm:text-txt sm:font-bold text-center mb-2 sm:mb-5;
+}
+
+.workp {
+  @apply text-left text-txf sm:text-txfs mb-10 sm:mb-14 leading-5 sm:leading-6;
+}
