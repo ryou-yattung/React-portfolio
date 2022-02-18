@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 const Menu = ({ isOpen, toggle, toTop }) => {
   return (
     <nav
-      className={`fixed w-full h-full top-0 z-40 ease-in-out duration-700 bg-bgcolor1 text-white
+      className={`fixed w-screen h-screen top-0 z-40 transition-[] duration-500 bg-bgcolor1 text-white
       ${isOpen ? "left-[0%]" : "left-[-100%]"}`}
     >
       <div className="w-1/4 h-full absolute left-0 hidden sm:flex flex-col items-center justify-center">
         <img src={qrcode} alt="qrcode" />
-        <p className="text-2xl mt-3">スマホ用</p>
+        <p className="text-3xl tracking-widest mt-5">スマホ用</p>
       </div>
 
       <div
@@ -21,17 +21,17 @@ const Menu = ({ isOpen, toggle, toTop }) => {
         onClick={toTop}
       >
         <ul className="text-3xl sm:text-4xl">
-          <li className="mb-10 hover:text-ftcolor cursor-pointer">
+          <li className="mb-16 hover:text-ftcolor cursor-pointer">
             <Link to="/" onClick={toggle}>
               Homepage
             </Link>
           </li>
-          <li className="mb-10 hover:text-ftcolor cursor-pointer">
+          <li className="mb-16 hover:text-ftcolor cursor-pointer">
             <Link to="aboutMe" onClick={toggle}>
               AboutMe
             </Link>
           </li>
-          <li className="mb-10 hover:text-ftcolor tracking-widest cursor-pointer">
+          <li className="mb-24 sm:mb-16 hover:text-ftcolor tracking-widest cursor-pointer">
             <Link to="/works" onClick={toggle}>
               Works
             </Link>
@@ -39,21 +39,21 @@ const Menu = ({ isOpen, toggle, toTop }) => {
         </ul>
       </div>
 
-      <div className="w-20 h-full absolute right-0 flex flex-col items-center justify-center text-center">
-        <ul>
+      <div className="w-full sm:w-20 h-12 sm:h-full absolute bottom-28 sm:bottom-0 sm:right-5">
+        <ul className="w-3/5 sm:w-20 sm:h-full m-auto flex sm:flex-col items-center justify-between sm:justify-center">
           <li
-            className="mb-9"
+            className="mb-14 cursor-pointer"
             onClick={() =>
               window.open("https://www.instagram.com/_ryou_lyt/", "_blank")
             }
           >
             <FontAwesomeIcon
               icon={faInstagram}
-              className="text-3xl sm:text-5xl hover:text-ftcolor cursor-pointer"
+              className="text-4xl sm:text-5xl hover:text-ftcolor"
             />
           </li>
           <li
-            className="mb-9 cursor-pointer"
+            className="mb-14 cursor-pointer"
             onClick={() =>
               window.open("https://www.wantedly.com/id/itsu_ryou", "_blank")
             }
@@ -62,7 +62,7 @@ const Menu = ({ isOpen, toggle, toTop }) => {
               id="Logo"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 500 394"
-              className="w-12 h-12 sm:w-16 sm:h-16 fill-white hover:fill-ftcolor"
+              className="w-14 h-14 sm:w-16 sm:h-16 fill-white hover:fill-ftcolor"
             >
               <defs></defs>
               <circle cx="375" cy="122.95" r="38.98" />
@@ -70,20 +70,20 @@ const Menu = ({ isOpen, toggle, toTop }) => {
             </svg>
           </li>
           <li
-            className="mb-9"
+            className="mb-14 cursor-pointer"
             onClick={() =>
               window.open("https://github.com/ryou-yattung", "_blank")
             }
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className="text-3xl sm:text-5xl hover:text-ftcolor cursor-pointer"
+              className="text-4xl sm:text-5xl hover:text-ftcolor"
             />
           </li>
         </ul>
       </div>
 
-      <div className="w-full h-20 absolute bottom-10 sm:bottom-5 m-auto right-0 left-0">
+      <div className="hidden w-full h-20 absolute bottom-10 sm:bottom-5 m-auto right-0 left-0">
         <ul className="flex items-center justify-center text-1xl sm:text-2xl ">
           <li className="mr-5">
             <FontAwesomeIcon

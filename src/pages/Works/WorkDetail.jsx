@@ -48,15 +48,15 @@ const WorkDetail = ({ setWorkNum, setWorkDetail }) => {
                       setWorkNum(`${work.num}`);
                       setWorkDetail(true);
                     }}
-                    className="text-txfs font-bold bg-bgcolor1 px-16 py-5 cursor-pointer"
+                    className="text-txfs font-bold bg-bgcolor1 px-16 py-5 cursor-pointer ease duration-500  hover:scale-110"
                   >
-                    もっと詳しく
+                    詳細を見る
                   </p>
                   <p
                     onClick={() => window.open(`${work.link}`)}
-                    className="text-txfs font-bold bg-ftcolor text-white px-16 py-5 cursor-pointer"
+                    className="text-txfs font-bold bg-ftcolor text-white px-16 py-5 cursor-pointer ease duration-500  hover:scale-110"
                   >
-                    サイトを見る
+                    WEBサイト
                   </p>
                 </div>
               </div>

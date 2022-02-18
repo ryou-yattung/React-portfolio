@@ -9,8 +9,6 @@ const Index = () => {
   // WorkPage change state
   const [workDetail, setWorkDetail] = useState(false);
 
-  // console.log(workNum, workDetail);
-
   return (
     <div className="relative">
       <WorkDetail setWorkNum={setWorkNum} setWorkDetail={setWorkDetail} />
