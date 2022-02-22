@@ -19,10 +19,10 @@ const AboutDetail = () => {
           <br />
           新発想を生み出す
         </h2>
-        <p className="text-txf sm:text-txfs px-8 sm:p-0 sm:mt-[30px] sm:ml-[150px] 2xl:ml-[400px] sm:w-[550px] sm:leading-7 2xl:leading-10">
-          自分の知らない土地、自分の知らない言語、自分の知らない人と出会い。
-          まだみぬ場所に行けば自ずと学びも増え、楽しいあまりです。新しい体験をたくさんし、
-          視野が広がり、新発想も生み出す分けだと思う。
+        <p className="text-txf sm:text-txfs px-8 sm:p-0 sm:mt-[30px] sm:ml-[150px] 2xl:ml-[350px] sm:w-[570px] sm:leading-7 2xl:leading-10">
+          自分の知らない土地、自分の知らない言語、 自分の知らない人と出会い。
+          まだ見ぬ場所に行けば、自ずと学びも増え、それが私の楽しみです。新しい体験を沢山することで、視野が広がり、新しい発想を
+          生み出す原動力になります。
         </p>
       </div>
 
@@ -94,50 +94,50 @@ const AboutDetail = () => {
         <div className="mt-10 text-txf">
           <h3 className="text-txt border-b-4 border-ftcolor">My Site</h3>
           <div className="mt-5 flex justify-around items-end text-center">
-            <div className="w-auto cursor-pointer group">
-              <a
-                href="https://www.instagram.com/_ryou_lyt/"
-                target="_blank"
-                rel="instagram"
-              >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="text-5xl text-ftcolor group-hover:opacity-60"
-                />
-              </a>
+            <div
+              onClick={() =>
+                window.open("https://www.instagram.com/_ryou_lyt/", "_blank")
+              }
+              className="w-auto cursor-pointer group"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="text-5xl text-ftcolor group-hover:opacity-60"
+              />
+
               <p className="mt-2">INSTAGRAM</p>
             </div>
-            <div className="w-auto cursor-pointer group">
-              <a
-                href="https://www.wantedly.com/id/itsu_ryou"
-                target="_blank"
-                rel="wantedly"
+            <div
+              onClick={() =>
+                window.open("https://www.wantedly.com/id/itsu_ryou", "_blank")
+              }
+              className="w-auto cursor-pointer group"
+            >
+              <svg
+                id="Logo"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 500 394"
+                className="w-16 h-16 pt-4 fill-ftcolor m-auto group-hover:opacity-60"
               >
-                <svg
-                  id="Logo"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 500 394"
-                  className="w-16 h-16 pt-4 fill-ftcolor m-auto group-hover:opacity-60"
-                >
-                  <defs></defs>
-                  <circle cx="375" cy="122.95" r="38.98" />
-                  <path d="M217.17 234.77c-2.34-1.52-9-10.45-27.42-54.44-1.15-2.76-2.22-5.14-3.23-7.18l-3.77-9.08-32.28-77.95H85.89l32.29 77.95 32.29 78 29.82 72a2.68 2.68 0 0 0 4.94 0l32.45-77.68a1.34 1.34 0 0 0-.51-1.62ZM338.15 234.77c-2.34-1.52-9-10.45-27.42-54.44-1.15-2.76-2.23-5.14-3.24-7.19l-3.75-9.07-32.29-77.95h-64.58l32.29 77.95 32.29 78 29.82 72a2.68 2.68 0 0 0 4.94 0l32.45-77.67a1.36 1.36 0 0 0-.51-1.63Z" />
-                </svg>
-              </a>
+                <defs></defs>
+                <circle cx="375" cy="122.95" r="38.98" />
+                <path d="M217.17 234.77c-2.34-1.52-9-10.45-27.42-54.44-1.15-2.76-2.22-5.14-3.23-7.18l-3.77-9.08-32.28-77.95H85.89l32.29 77.95 32.29 78 29.82 72a2.68 2.68 0 0 0 4.94 0l32.45-77.68a1.34 1.34 0 0 0-.51-1.62ZM338.15 234.77c-2.34-1.52-9-10.45-27.42-54.44-1.15-2.76-2.23-5.14-3.24-7.19l-3.75-9.07-32.29-77.95h-64.58l32.29 77.95 32.29 78 29.82 72a2.68 2.68 0 0 0 4.94 0l32.45-77.67a1.36 1.36 0 0 0-.51-1.63Z" />
+              </svg>
+
               <p className="mt-2">WANTEDLY</p>
             </div>
-            <div className="w-auto cursor-pointer group">
-              <a
-                href="https://github.com/ryou-yattung"
-                target="_blank"
-                rel="github"
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  className="text-5xl hover:text-ftcolor group-hover:opacity-60"
-                />
-              </a>
-              <p className="mt-2">GITHUT</p>
+            <div
+              onClick={() =>
+                window.open("https://github.com/ryou-yattung", "_blank")
+              }
+              className="w-auto cursor-pointer group"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="text-5xl hover:text-ftcolor group-hover:opacity-60"
+              />
+
+              <p className="mt-2">GITHUB</p>
             </div>
           </div>
         </div>

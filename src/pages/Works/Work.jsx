@@ -6,7 +6,7 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 const Work = ({ workNum, workDetail, setWorkDetail }) => {
   return (
     <section
-      className={`w-screen h-screen fixed top-0 z-[60] overflow-y-scroll bg-white text-ftcolor ease-in-out duration-700
+      className={`w-screen h-screen fixed top-0 z-[60] overflow-y-scroll pb-10 bg-white text-ftcolor ease-in-out duration-700
     ${workDetail ? "right-[0%]" : "right-[-100%]"}`}
     >
       <FontAwesomeIcon
@@ -42,6 +42,11 @@ const Work = ({ workNum, workDetail, setWorkDetail }) => {
             {WorkList[workNum].detail}
           </p>
 
+          <h3 className="workh3">役割分担</h3>
+          <p className="text-txf sm:text-txfs mb-10 sm:mb-14 text-center">
+            {WorkList[workNum].sharing}
+          </p>
+
           <h3 className="workh3">コート</h3>
           <p className="text-txf sm:text-txfs mb-10 sm:mb-14 text-center">
             {WorkList[workNum].code}
@@ -52,7 +57,7 @@ const Work = ({ workNum, workDetail, setWorkDetail }) => {
             onClick={() => window.open(`${WorkList[workNum].githut}`)}
             className="w-full sm:w-[280px] h-[60px] sm:h-[70px] m-auto my-6 text-txfs bg-bgcolor1 font-bold text-center leading-[60px] sm:leading-[70px] cursor-pointer ease duration-500  hover:scale-110"
           >
-            Githut
+            Github
           </p>
           <p
             onClick={() => window.open(`${WorkList[workNum].link}`)}

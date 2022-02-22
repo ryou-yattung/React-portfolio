@@ -96,8 +96,8 @@ const AboutTri = () => {
                 />
                 <h3 className="text-txf font-bold">大阪</h3>
               </div>
-              <p className="text-txf px-5 py-5">
-                ４時間で山に登りていましたが、ススキの草原が広がっている景色を見ると。登る価値があるなと思いました。
+              <p className="text-txf px-6 py-5">
+                ４時間かけて山を登ったのですが、ススキの草原が広がっている景色を見ると。登る価値があるなと思いました。{" "}
               </p>
             </div>
           </div>

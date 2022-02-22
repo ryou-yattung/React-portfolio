@@ -17,10 +17,10 @@ const Footer = ({ hgState }) => {
         >
           yattungleung159@gmail.com
         </a>
-        <p className="text-txf sm:text-txfs tracking-tighter mt-2 sm:mt-4">
+        <p className="text-txf sm:text-txfs tracking-tighter sm:tracking-normal mt-4 sm:mt-8">
           Webサイトにご訪問いただき、ありがとうございます。
           <br />
-          気軽にご連絡ください。
+          インターンシップや面談などご連絡お待ちしております。
         </p>
       </div>
 
