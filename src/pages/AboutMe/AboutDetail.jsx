@@ -72,15 +72,15 @@ const AboutDetail = () => {
             <div className="flex flex-wrap  justify-around items-end text-center mt-10">
               <div className="skillFlex">
                 <img src={Tailwindcss} alt="tailwindcss" />
-                <p className="mt-4 -translate-x-3">TAILWIND</p>
+                <p className="mt-4 -translate-x-5">TailwindCSS</p>
               </div>
               <div className="skillFlex">
                 <img src={Js} alt="js" className="w-12 m-auto" />
-                <p className="mt-2">JS</p>
+                <p className="mt-2 -translate-x-2">JavaScript</p>
               </div>
               <div className="skillFlex">
                 <img src={ReactLogo} alt="react" className="w-12" />
-                <p className="mt-2">REACT</p>
+                <p className="mt-2">React</p>
               </div>
               <div className="skillFlex">
                 <img src={Php} alt="php" className="w-12" />

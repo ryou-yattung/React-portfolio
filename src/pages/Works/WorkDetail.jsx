@@ -36,7 +36,7 @@ const WorkDetail = ({ setWorkNum, setWorkDetail }) => {
 
                 <div className="flex items-center mb-10">
                   <h4 className="mr-3 px-4 py-2 bg-bgcolor2 font-bold">
-                    コード
+                    使用技術
                   </h4>
 
                   <p className="mr-8 text-txfs font-bold">{work.code}</p>

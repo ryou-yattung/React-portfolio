@@ -22,37 +22,41 @@ const Work = ({ workNum, workDetail, setWorkDetail }) => {
           <h2 className="text-txfs leading-[1] mb-8 sm:mb-20 text-ftcolor text-center sm:text-txt sm:font-bold">
             {WorkList[workNum].name[1]}
           </h2>
-          <img
-            src={require(`../../img/work${WorkList[workNum].id}.png`)}
-            alt={`Work${WorkList[workNum].id}`}
-            className="w-full sm:w-2/3 2xl:w-3/5 h-auto m-auto object-contain"
-          />
+
+          <div className="sm:w-[1200px] 2xl:w-[1400px] h-auto m-auto sm:flex flex-nowrap items-center 2xl:mt-36">
+            <img
+              src={require(`../../img/work${WorkList[workNum].id}.png`)}
+              alt={`Work${WorkList[workNum].id}`}
+              className="w-full sm:w-3/4 2xl:w-4/5 h-auto m-auto object-contain"
+            />
+            <div className="hidden sm:block ml-10">
+              <h3 className="workh3">制作詳細</h3>
+              <p className="text-txf sm:text-txfs mb-10 sm:mb-14 text-center">
+                {WorkList[workNum].detail}
+              </p>
+
+              <h3 className="workh3">役割分担</h3>
+              <p className="text-txf sm:text-txfs mb-10 sm:mb-14 text-center">
+                {WorkList[workNum].sharing}
+              </p>
+
+              <h3 className="workh3">使用技術</h3>
+              <p className="text-txf sm:text-txfs mb-10 sm:mb-14 text-center">
+                {WorkList[workNum].code}
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="sm:w-[500px] sm:m-auto text-ftcolor">
           <h3 className="workh3">紹介</h3>
           <p className="workp">{WorkList[workNum].intro}</p>
-          <h3 className="workh3">失敗した点</h3>
-          <p className="workp">{WorkList[workNum].fail}</p>
-          <h3 className="workh3">どんな勉強した?</h3>
+          <h3 className="workh3">力を入れた点</h3>
           <p className="workp">{WorkList[workNum].study}</p>
-
-          <h3 className="workh3">制作詳細</h3>
-          <p className="text-txf sm:text-txfs mb-10 sm:mb-14 text-center">
-            {WorkList[workNum].detail}
-          </p>
-
-          <h3 className="workh3">役割分担</h3>
-          <p className="text-txf sm:text-txfs mb-10 sm:mb-14 text-center">
-            {WorkList[workNum].sharing}
-          </p>
-
-          <h3 className="workh3">コート</h3>
-          <p className="text-txf sm:text-txfs mb-10 sm:mb-14 text-center">
-            {WorkList[workNum].code}
-          </p>
+          <h3 className="workh3">失敗と今後の目標</h3>
+          <p className="workp">{WorkList[workNum].fail}</p>
         </div>
-        <div className="w-full sm:w-[800px] sm:mx-auto sm:my-14 sm:flex justify-between">
+        <div className="w-full sm:w-[800px] sm:mx-auto sm:my-20 sm:flex justify-between">
           <p
             onClick={() => window.open(`${WorkList[workNum].githut}`)}
             className="w-full sm:w-[280px] h-[60px] sm:h-[70px] m-auto my-6 text-txfs bg-bgcolor1 font-bold text-center leading-[60px] sm:leading-[70px] cursor-pointer ease duration-500  hover:scale-110"
